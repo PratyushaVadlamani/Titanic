@@ -149,11 +149,3 @@ ggplot(titanic, aes(x = Age, fill = Survived)) +
 #Eight Question: Is there a correlation between Age and Fare and how does this compare to Survival rate
 ggplot(titanic, aes(x=Age, y=Fare))+geom_point(aes(color=Pclass, shape=Survived, size=2, alpha=0.5))
 # we are having 2 visualisations; 1. color 2. shape
-
-#Excercise: Create a xy plot that plots mpg and hp on the mtcars dataset and segment it using cycl and gears
-#What are your insights
-
-mtcars1 <- read.csv("mtcars.csv", stringsAsFactors = FALSE)
-View(mtcars1)
-mtcars1$cyl <- as.factor(mtcars1$cyl)
-mtcars1$gear <- as.factor(mtcars1$gear)
